@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/cartubiao.png</file>
+        <file>image/shibiecar.png</file>
+        <file>image/fengmian.png</file>
+        <file>image/icon.png</file>
+        <file>image/wenzi.png</file>
+        <file>image/title.png</file>
+        <file>image/sliderimage/1.jpg</file>
+        <file>image/sliderimage/2.jpg</file>
+        <file>image/sliderimage/3.jpg</file>
+        <file>image/sliderimage/4.jpg</file>
+        <file>image/sliderimage/5.jpg</file>
+        <file>image/sliderimage/one.png</file>
+        <file>image/sliderimage/three.jpg</file>
+        <file>image/sliderimage/two.jpg</file>
+        <file>image/jiesuan.png</file>
+        <file>image/carshi.png</file>
+        <file>image/shi2.png</file>
+        <file>image/open.svg</file>
+        <file>image/start.svg</file>
+        <file>image/mainpage.svg</file>
+        <file>image/close_.svg</file>
+        <file>image/jiesuan.svg</file>
+    </qresource>
+</RCC>
