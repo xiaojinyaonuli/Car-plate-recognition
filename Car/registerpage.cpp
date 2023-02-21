@@ -96,7 +96,7 @@ void RegisterPage::Commonbtnconnect()
     timer->start();
     //注册按钮
     connect(reg,&CommonSmallButton::clicked,this,[=](){
-         QDesktopServices::openUrl(QUrl(QString("http://118.195.179.135:9006")));
+         QDesktopServices::openUrl(QUrl(QString("http://xxx.xxx.xxx.xxx:port")));//在此处添加你的网址，并注意数据库的连接
     });
     connect(timer,&QTimer::timeout,monitor,&MyThread::ThreadStart);
     //监视线程

@@ -633,32 +633,35 @@ void CommonSmallButton::slot_animationfinsh()
 
 void MyThread::init_MySql()
 {
-    db= QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("118.195.179.135");
-    db.setPort(3306);
-    db.setDatabaseName("yourdb");
-    db.setUserName("root");
-    db.setPassword("1314jinshen");
-    (!db.open())?qDebug()<<db.lastError().text():qDebug() << "open";
-    QSqlQuery query(db);
-    query.exec("select *from user"); //查询user表
-    while (query.next()) {
-        ACCOUNT<<query.value(0).toString();
-        PASSWD<<query.value(1).toString();
+//    db= QSqlDatabase::addDatabase("QMYSQL");         //此处为连接云服务器数据库操作，如果你配置好了云服务器上的数据库，请你将此处代码注释解除，不懂的可以查询百度
+//    db.setHostName("xxx.xxx.xxx.xxx");
+//    db.setPort(3306);
+//    db.setDatabaseName("yourdb");
+//    db.setUserName("root");
+//    db.setPassword("xxxxxxxxxxxx");//你的密码
+//    (!db.open())?qDebug()<<db.lastError().text():qDebug() << "open";
+//    QSqlQuery query(db);
+//    query.exec("select *from user"); //查询user表
+//    while (query.next()) {
+//        ACCOUNT<<query.value(0).toString();
+//        PASSWD<<query.value(1).toString();
 
-    }
+//    }
 
 }
 
 void MyThread::MySqloperation(const QString & acc,const QString &pass)
 {
-    foreach(auto ACC ,ACCOUNT){
-        if(ACC==acc){
-            foreach (auto PASS, PASSWD) {
-                if(PASS==pass){emit APTrue(true);}
-            }
-        }else continue;
-    }
+//    foreach(auto ACC ,ACCOUNT){
+//        if(ACC==acc){
+//            foreach (auto PASS, PASSWD) {
+//                if(PASS==pass){emit APTrue(true);}
+//            }
+//        }else continue;               // 此处为循环对比你在云服务器中已经在注册界面注册的账号与密码是否和你目前正在输入框输入的一样
+//    }                                 // 就是说 你已经注册的账号  和你目前输入的账号是否一致，一致就发送true的信号，让登录按钮变的可用
+
+
+    emit APTrue(true);   //这里是方便进入，如果你已经布置好了云服务器等配置，请你将此行注释，并将上处注释取消!!!!!!!
 
 }
 
